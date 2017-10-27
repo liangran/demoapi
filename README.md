@@ -139,7 +139,7 @@ GET /v1/account/{:address}/info
 | error_code | string | 出错代码 |
 | error_detail | string | 出错的描述和补充信息 |
 | address | string | 账号ID |
-| balances | array | 资产数组 |
+| balances | array | 资产数组， asset_type是native时，表示是链上的原生资产，否则为链上发行的资产。|
 | data | object | 键值对，用于存储一些关键短小的信息 |
 
 
